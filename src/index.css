@@ -1,0 +1,11 @@
+@import 'tailwindcss';
+@theme {
+  --color-cross: #ff5f57;
+  --color-mini: #ffbc2e;
+  --color-expand: #2bc840;
+  --color-title-bg: #323a41;
+  --color-title: #adb3b9;
+}
+body {
+  background-color: black;
+}
