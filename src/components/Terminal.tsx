@@ -1,9 +1,11 @@
+import PrefixLine from './PrefixLine';
 import ToolBar from './Toolbar';
 
 export default function Terminal() {
   return (
-    <div>
+    <div className='pt-13 font-terminal'>
       <ToolBar />
+      <PrefixLine/>
     </div>
   );
 }

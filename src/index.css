@@ -1,10 +1,67 @@
+@font-face {
+  font-family: 'DM Mono';
+  font-style: normal;
+  font-weight: normal; /* or 400 */
+  src: url('./assets/fonts/DMMono-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'DM Mono';
+  font-style: italic;
+  font-weight: normal; /* or 400 */
+  src: url('./assets/fonts/DMMono-Italic.ttf');
+}
+
+@font-face {
+  font-family: 'DM Mono';
+  font-style: normal;
+  font-weight: 300; /* For Light */
+  src: url('./assets/fonts/DMMono-Light.ttf');
+}
+
+@font-face {
+  font-family: 'DM Mono';
+  font-style: italic;
+  font-weight: 300; /* For Light Italic */
+  src: url('./assets/fonts/DMMono-LightItalic.ttf');
+}
+
+@font-face {
+  font-family: 'DM Mono';
+  font-style: normal;
+  font-weight: 500; /* For Medium */
+  src: url('./assets/fonts/DMMono-Medium.ttf');
+}
+
+@font-face {
+  font-family: 'DM Mono';
+  font-style: italic;
+  font-weight: 500; /* For Medium Italic */
+  src: url('./assets/fonts/DMMono-MediumItalic.ttf');
+}
 @import 'tailwindcss';
+
 @theme {
   --color-cross: #ff5f57;
   --color-mini: #ffbc2e;
   --color-expand: #2bc840;
   --color-title-bg: #323a41;
   --color-title: #adb3b9;
+  --color-terminal: #1eff01;
+  --font-terminal: 'DM Mono', monospace;
+  --animate-blink: blink 1s infinite;
+}
+
+@layer base {
+  @keyframes blink {
+    0%,
+    100% {
+      background-color: transparent;
+    }
+    50% {
+      background-color: #1eff01;
+    }
+  }
 }
 body {
   background-color: black;
