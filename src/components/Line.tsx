@@ -9,24 +9,14 @@ interface Line {
 
 export default function Line({ commandType, value, isActive = false }: Line) {
   return (
-    <div className='w-dvw cursor-default gap-2'>
-      <div className='text-terminal flex gap-2'>
-        {commandType === 'command' && <PrefixLine />}
-        {isActive ? (
-          <div className='flex gap-2 outline-none border-none' contentEditable>w</div>
-        ) : (
-          <div className='flex gap-2'>{value}</div>
-        )}
-        {isActive && <BlockCursor />}
-      </div>
-    </div>
+    <p className='text-terminal mt-0.5 w-dvw cursor-default gap-2'>
+      {commandType === 'command' && PrefixLine()}
+      {value}
+      {isActive && <BlockCursor/>}
+    </p>
   );
 }
 
 function PrefixLine() {
-  return (
-    <span>
-      yellowflash@yellow-MacBook-Air <Path />
-    </span>
-  );
+  return `yellowflash@yellow-MacBook-Air ${Path()}`;
 }

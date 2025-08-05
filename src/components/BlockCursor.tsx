@@ -1,3 +1,3 @@
-export default function BlockCursor(){
-    return <span className="h-auto w-2 my-1 animate-blink bg-terminal"></span>
+export default function BlockCursor() {
+  return <span className='animate-blink bg-terminal w-2 px-1'></span>;
 }

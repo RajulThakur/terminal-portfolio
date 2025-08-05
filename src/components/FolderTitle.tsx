@@ -5,10 +5,10 @@ export default function FolderTitle() {
     <div className='text-title flex items-center gap-3 font-semibold'>
       <img src='/folder.png' className='h-4' />
       <div className='flex items-center gap-1'>
-        <span>yellowflash</span>
-        <span>&#x2014;</span>
+        <span className="hidden md:block">yellowflash</span>
+        <span className="hidden md:block">&#x2014;</span>
         <span>-zsh</span>
-        <span>&#x2014;</span>
+        <span className="hidden md:block">&#x2014;</span>
         <Dimension/>
       </div>
     </div>

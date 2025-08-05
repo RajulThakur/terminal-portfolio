@@ -12,7 +12,7 @@ export default function Dimension() {
       setDim({ height: window.innerHeight, width: window.innerWidth });
     });
   }, []);
-  return <div className='text-center w-24 tracking-wider '>
+  return <div className='hidden md:block text-center w-24 tracking-wider '>
     {dim?.height}x{dim?.width}
   </div>;
 }
